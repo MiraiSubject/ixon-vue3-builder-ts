@@ -1,7 +1,7 @@
 {
   "name": "@miraisubject/ixon-vue3-builder-ts",
   "version": "1.0.0",
-  "description": "",
+  "description": "Builder for Vue 3 components with typescript support in the IXON CDK",
   "main": "index.js",
   "author": "",
   "license": "ISC",
