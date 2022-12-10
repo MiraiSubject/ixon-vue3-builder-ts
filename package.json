@@ -1,0 +1,20 @@
+{
+  "name": "@miraisubject/vue3-builder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vitejs/plugin-vue": "^2.3.1",
+    "is-potential-custom-element-name": "^1.0.1",
+    "sass": "^1.50.1",
+    "typescript": "^4.9.3",
+    "vite": "2.9.6",
+    "vue": "^3.2.33",
+    "vue-tsc": "^1.0.9"
+  },
+  "peerDependencies": {
+    "@ixon-cdk/core": "^1.1.0"
+  }
+}
