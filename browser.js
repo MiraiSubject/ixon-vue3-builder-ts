@@ -11,6 +11,7 @@ const {
   copyAssets,
   watchAssets,
 } = require('@ixon-cdk/core');
+import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js';
 
 async function _build(inputFile, outputFile, tag, assets, production, watch) {
   const inputDir = path.dirname(path.join(getRootDir(), inputFile));
@@ -53,7 +54,10 @@ async function _build(inputFile, outputFile, tag, assets, production, watch) {
       },
     },
     write: true,
-    plugins: [vue({ customElement: true, isProduction: production })],
+    plugins: [
+      cssInjectedByJsPlugin(),
+      vue({ customElement: true, isProduction: production })
+    ],
   };
 
   // build
